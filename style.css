@@ -14,7 +14,7 @@ body {
 
 header {
     background-color: #76277A;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 999;
 
@@ -201,7 +201,8 @@ html {
 .cards {
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    
     
 
 }
@@ -215,6 +216,7 @@ html {
     text-align: center;
     height: auto;
     transition: 0.4s;
+    margin: 1rem;
 
 }
 
@@ -274,15 +276,17 @@ html {
 
 .div {
     position: relative;
-    border: 2px solid red;  
+    
     
 }
 
 .img {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     /* border: 2px solid red;   */
+    justify-content: center;
+    gap: 1rem;
    
  
    
@@ -427,6 +431,16 @@ footer .p {
 
 }
 @media (max-width:768px){
+    .Portafolio{
+        margin: 0;
+        padding-bottom: .7rem;
+    }
+    .container-navbar{
+       
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
     textarea{
      width: 20rem;   
     }
@@ -435,4 +449,30 @@ footer .p {
         
     }
  
+}
+@media (max-width:480px){
+    .Portafolio{
+        margin: 0;
+        padding: 0;
+        padding-bottom: .7rem;
+       
+    }
+    .container-navbar ul{
+        width: 100%;
+        margin: 0;
+        
+        
+    }
+    .container-navbar{
+        width: 99%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .img-cars{
+        margin: 0%;
+        width: 99%;
+        width: 20rem;
+    }
+
 }
