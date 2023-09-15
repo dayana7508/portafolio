@@ -208,10 +208,10 @@ html {
 
 .container-card {
     
-    width: 30rem;
+    width: 20rem;
     background-color: #1a1919;
     border-radius: 1rem;
-    padding: 2.5rem;
+    padding: 1.6rem;
     text-align: center;
     height: auto;
     transition: 0.4s;
@@ -274,14 +274,17 @@ html {
 
 .div {
     position: relative;
+    border: 2px solid red;  
     
 }
 
 .img {
-    flex-wrap: wrap;
-    /* border: 2px solid red;   */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    /* border: 2px solid red;   */
+   
+ 
    
 }
 section{
@@ -305,8 +308,8 @@ section{
 }
 
 .img-cars {
-    width: 28rem;
-    height: 15rem;
+    width: 23rem;
+    height: 12rem;
     border-radius: 2rem;
     object-fit: cover;
 
@@ -422,4 +425,14 @@ footer .p {
     font-size: 1.3rem;
 
 
+}
+@media (max-width:768px){
+    textarea{
+     width: 20rem;   
+    }
+    input{
+        display: flex;
+        
+    }
+ 
 }
